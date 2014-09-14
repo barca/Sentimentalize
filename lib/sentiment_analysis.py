@@ -38,7 +38,7 @@ def analyze_get_score(phrase,need_score):
   tally = change_score(tally,phrase,True)
   tally = change_score(tally,phrase,False)
   if(need_score):
-    return tally.score
+    return tally.score * -1
   else:
-    return tally.comparitave
+    return tally.comparitave * -1 
 
